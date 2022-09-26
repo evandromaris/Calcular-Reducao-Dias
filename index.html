@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/Logo.svg">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            Calcular dias reduzidos!
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="content-all">
+            <header>
+                <div class="title">
+                    <img src="images/Logo.svg" alt="imagem nao fume">
+                    <h1>
+                        Fumar reduz seus dias de vida!
+                    </h1>
+                    <p>
+                        Em média as pessoas perdem 11 minutos de vida por cada cigarro fumado, segundo um estudo publicado na <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1117323/">U.S. National Institutes of Health’s National Library of Medicine (NIH/NLM)</a>. <br> <br> 
+                        Você pode calcular quantos dias ou anos da sua vida você já perdeu fumando cigarros.
+                    </p>
+                </div>
+            </header>
+    
+            <main>
+                <div class="container">
+                    <div class="box-calc">
+                        <p>
+                            Quantos cigarros você fuma por dia?
+                        </p>
+                        <form action="">
+                            <label for="calc" >
+                                <input id="calc-days" type="number" placeholder="00">
+                            </label>
+                        </form>
+                    </div>
+                    
+                    <div class="box-calc">
+                        <p>Há quantos anos você fuma?</p>
+                        <form action="">
+                            <label for="calc" >
+                                <input id="calc-age" type="number" placeholder="00">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <button onclick="calcDays()">
+                    Calcular
+                </button>
+    
+                <div class="calc-result">
+                    <p>Você já perdeu:</p>
+                    <div class="box-calc">
+                        <form action="">
+                            <label id="result" for="calc">
+                                00 dias
+                            </label>
+                        </form>
+                    </div>
+                </div>
+    
+                <section>
+                    <h3>Não fume, viver bem é viver feliz!</h3>
+                    <img src="images/health-green.png" width="50px" alt="imagem coração verde">
+                </section>
+            </main>
+        </div>
+        
+
+        <footer>
+            Coded by Evandro Maris 🧑‍💻
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
