@@ -9,7 +9,7 @@ function calcDays(){
 
     if(amontAge && amontSmoke >= 0){
         daySmoking = amontAge * 365;
-        totalMin = amontSmoke * 10;
+        totalMin = amontSmoke * 11;
 
         totalDaysLost = (((daySmoking * totalMin) / 60) /24);
 
