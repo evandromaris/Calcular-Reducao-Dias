@@ -7,7 +7,7 @@ function calcDays(){
 
     let daySmoking, totalMin, totalDaysLost = Number;
 
-    if(amontAge && amontSmoke >= 0){
+    if(amontAge > 0 && amontSmoke > 0){
         daySmoking = amontAge * 365;
         totalMin = amontSmoke * 11;
 
